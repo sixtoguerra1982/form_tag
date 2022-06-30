@@ -1,0 +1,11 @@
+<%= form_tag(add_path, method: "post", class:"container") do %>
+    <div class="form-group">
+        <%= label_tag(:first, "Primer número") %>
+        <%= text_field_tag(:first , nil, class: 'form-control') %>
+    </div>
+    <div class="form-group">
+        <%= label_tag(:last, "Segundo número") %>
+        <%= text_field_tag(:last, nil, class: 'form-control') %>
+    </div>
+    <%= submit_tag("Sumar", class: 'btn btn-primary') %>
+<% end %>

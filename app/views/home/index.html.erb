@@ -1,4 +1,5 @@
-<form action="<%= users_create_path  %>" class="container" id="create_users">
+<form action="<%= users_path  %>" method="post" class="container" id="create_users">
+  <%= token_tag %>
   <div class="form-group">
     <label for="email">Email</label>
     <input name="email" type="email" class="form-control" id="email" required>
